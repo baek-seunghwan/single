@@ -196,7 +196,7 @@ def s_mape(yTrue, yPred):
     return mape
 
 
-def evaluate_sliding_window(data, test_window, model, evaluateL2, evaluateL1, n_input, is_plot, smooth_alpha=0.7, clamp_ratio=0.1):
+def evaluate_sliding_window(data, test_window, model, evaluateL2, evaluateL1, n_input, is_plot, smooth_alpha=1.0, clamp_ratio=0.0):
     total_loss = 0
     total_loss_l1 = 0
     n_samples = 0
@@ -258,13 +258,21 @@ def evaluate_sliding_window(data, test_window, model, evaluateL2, evaluateL1, n_
                     y_pred = y_pred[:-(y_pred.shape[0] - y_true.shape[0]), ]
             outputs.append(y_pred)
 
-        outputs = torch.stack(outputs)
+        outputs = torch.stack(outputs)  # [num_runs, T, N]
         y_pred = torch.mean(outputs, dim=0)
         var = torch.var(outputs, dim=0)
-        std_dev = torch.std(outputs, dim=0)
 
-        z = 1.96
-        confidence = z * std_dev / torch.sqrt(torch.tensor(num_runs))
+        # Compute empirical 95% prediction interval (2.5% - 97.5%) from ensemble samples.
+        # Using the percentile-based prediction interval better represents predictive
+        # uncertainty for MC-sampled outputs than dividing the std of samples by sqrt(n).
+        try:
+            lower = torch.quantile(outputs, torch.tensor(0.025, device=outputs.device), dim=0)
+            upper = torch.quantile(outputs, torch.tensor(0.975, device=outputs.device), dim=0)
+            confidence = (upper - lower) / 2.0
+        except Exception:
+            # Fallback if quantile not supported: approximate with std (prediction std)
+            std_dev = torch.std(outputs, dim=0)
+            confidence = std_dev * 1.96
 
         # ===== B: Smoothing/Clamping (예측값 안정화, 순수 모델 성능 보려면 smooth_alpha=1.0, clamp_ratio=0) =====
         if last_predicted is not None and smooth_alpha < 1.0:
@@ -407,13 +415,17 @@ def evaluate(data, X, Y, model, evaluateL2, evaluateL1, batch_size, is_plot):
                     output = output.unsqueeze(dim=0).unsqueeze(dim=0)  # [N] → [1, 1, N]
                 outputs.append(output)
 
-        outputs = torch.stack(outputs)
+        outputs = torch.stack(outputs)  # [num_runs, B, T, N]
         mean = torch.mean(outputs, dim=0)
         var = torch.var(outputs, dim=0)
-        std_dev = torch.std(outputs, dim=0)
-
-        z = 1.96
-        confidence = z * std_dev / torch.sqrt(torch.tensor(num_runs))
+        # Empirical prediction interval per-sample
+        try:
+            lower = torch.quantile(outputs, torch.tensor(0.025, device=outputs.device), dim=0)
+            upper = torch.quantile(outputs, torch.tensor(0.975, device=outputs.device), dim=0)
+            confidence = (upper - lower) / 2.0
+        except Exception:
+            std_dev = torch.std(outputs, dim=0)
+            confidence = std_dev * 1.96
 
         output = mean
 
@@ -610,8 +622,11 @@ def train(data, X, Y, model, criterion, optim, batch_size):
             tx = X[:, :, :, :]
             ty = Y[:, :, :]
             
-            # ===== A: Scheduled Sampling (15% 확률로 자기회귀 학습, kr_fx 일반화 개선) =====
-            use_autoregressive = random.random() < 0.15
+            # ===== A: Scheduled Sampling (자기회귀)
+            # 기본적으로 비활성화하여 레깅 현상 완화. 필요 시 env로 켤 수 있음.
+            use_autoregressive = False
+            if os.environ.get('ENABLE_SCHEDULED_SAMPLING', '0') == '1':
+                use_autoregressive = (random.random() < 0.15)
             if use_autoregressive and iter > 0:
                 # 이전 예측값을 다음 입력에 일부 사용 (자기회귀 학습)
                 with torch.no_grad():

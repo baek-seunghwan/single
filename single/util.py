@@ -168,9 +168,21 @@ class DataLoaderS(object):
         except:
              self.col = [str(i) for i in range(self.m)]
 
-        # Target-weighted loss: FX 변수 가중치 (kr_fx 올리면 kr_fx 오차율 감소 가능, 과하면 다른 변수 악화)
+        # Target-weighted loss: FX 변수 가중치 (kr_fx 올리면 kr_fx 오차율 감소 가능)
+        # 목표: kr/jp/us RSE 개선을 위해 중요도를 높임 (값은 실험으로 조정 가능)
         self.target_weight = torch.ones(self.m, device=device) * 0.1  # 나머지 변수는 0.1
-        kr_w, jp_w, us_w = 40.0, 20.0, 20.0
+        kr_w, jp_w, us_w = 120.0, 80.0, 80.0
+        # Allow external tuning via environment variables (multiplicative).
+        try:
+            import os
+            kr_mul = float(os.environ.get('TARGET_KR_MULT', '1.0'))
+            jp_mul = float(os.environ.get('TARGET_JP_MULT', '1.0'))
+            us_mul = float(os.environ.get('TARGET_US_MULT', '1.0'))
+            kr_w *= kr_mul
+            jp_w *= jp_mul
+            us_w *= us_mul
+        except Exception:
+            pass
         for v in range(self.m):
             if self.col[v] == 'kr_fx':
                 self.target_weight[v] = kr_w
@@ -215,29 +227,34 @@ class DataLoaderS(object):
 
     def _resolve_split_indices(self, train_ratio, valid_ratio, date_series):
         """회의 결정: valid=24년 1~12월, test=25년 1~12월. Date 있으면 날짜 기준, 없으면 비율.
-        train_ratio=1.0, valid_ratio=0.0 이면 전체를 train으로 사용 (원본 train.py 전체 데이터 학습용)."""
+        If date markers for 2024 and 2025 exist, prefer date-based split so that
+        training/validation never use 2025 data. Otherwise fall back to ratio or
+        full-data mode when requested.
+        """
+        # If date information exists and contains both 2024 and 2025 markers, always
+        # prefer date-based split to ensure no 2025 data is used during training/validation.
+        if date_series is not None and len(date_series) == self.n:
+            try:
+                parts = date_series.astype(str).str.strip().str.split('-', expand=True)
+                if parts.shape[1] >= 2:
+                    years = parts[0].astype(int).to_numpy()
+                    months = parts[1].astype(int).to_numpy()
+                    mask_2024_01 = (years == 2024) & (months == 1)
+                    mask_2025_01 = (years == 2025) & (months == 1)
+                    if mask_2024_01.any() and mask_2025_01.any():
+                        valid_start = int(np.where(mask_2024_01)[0][0])
+                        test_start = int(np.where(mask_2025_01)[0][0])
+                        if valid_start < test_start:
+                            print(f"Date-based split: valid 2024-01~12 (rows {valid_start}~{test_start-1}), test 2025-01~12 (rows {test_start}~{self.n-1})")
+                            return valid_start, test_start
+            except Exception as e:
+                print(f"Date-based split failed ({e}), falling back to ratio/full-mode.")
+
+        # If we reach here, either date-based split wasn't possible or date markers not present.
         if train_ratio >= 1.0 or (train_ratio + valid_ratio) >= 1.0:
             print("Full-data mode: using 100% of data for training (no valid/test split).")
             return self.n, self.n
-        if date_series is None or len(date_series) != self.n:
-            return int(train_ratio * self.n), int((train_ratio + valid_ratio) * self.n)
-        try:
-            # "2011-01", "2024-12" 형태 파싱
-            parts = date_series.astype(str).str.strip().str.split('-', expand=True)
-            if parts.shape[1] < 2:
-                return int(train_ratio * self.n), int((train_ratio + valid_ratio) * self.n)
-            years = parts[0].astype(int).to_numpy()
-            months = parts[1].astype(int).to_numpy()
-            mask_2024_01 = (years == 2024) & (months == 1)
-            mask_2025_01 = (years == 2025) & (months == 1)
-            if mask_2024_01.any() and mask_2025_01.any():
-                valid_start = int(np.where(mask_2024_01)[0][0])
-                test_start = int(np.where(mask_2025_01)[0][0])
-                if valid_start < test_start:
-                    print(f"Date-based split: valid 2024-01~12 (rows {valid_start}~{test_start-1}), test 2025-01~12 (rows {test_start}~{self.n-1})")
-                    return valid_start, test_start
-        except Exception as e:
-            print(f"Date-based split failed ({e}), using ratio.")
+
         return int(train_ratio * self.n), int((train_ratio + valid_ratio) * self.n)
 
     def get_date_at_index(self, idx):

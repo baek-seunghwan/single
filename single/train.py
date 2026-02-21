@@ -78,8 +78,12 @@ def train(data, X, Y, model, criterion, optim, batch_size):
             tx = X[:, :, :, :]
             ty = Y[:, :, :]
             
-            # ===== A: Scheduled Sampling (15% 확률로 자기회귀 학습, Validation 일반화 개선) =====
-            use_autoregressive = random.random() < 0.15  # 0.1 → 0.15 (Validation 개선)
+            # ===== A: Scheduled Sampling (자기회귀)
+            # 기본적으로 비활성화하여 레깅(lagging) 현상을 방지합니다.
+            # 필요 시 환경변수 ENABLE_SCHEDULED_SAMPLING=1 으로 활성화할 수 있습니다.
+            use_autoregressive = False
+            if os.environ.get('ENABLE_SCHEDULED_SAMPLING', '0') == '1':
+                use_autoregressive = (random.random() < 0.15)
             if use_autoregressive and iter > 0:
                 # 이전 예측값을 다음 입력에 일부 사용 (자기회귀 학습)
                 with torch.no_grad():

@@ -1,0 +1,305 @@
+CUDA not available, using CPU
+===== Training seq_out_len=1 -> /Users/samrobert/Documents/GitHub/single/AXIS/model/Bayesian/model_1m.pt =====
+!!! Cleaning Cache Files in /Users/samrobert/Documents/GitHub/single/AXIS/data !!!
+!!! Cache Clean Complete !!!
+Loading data from /Users/samrobert/Documents/GitHub/single/AXIS/data/sm_data.csv...
+Data loaded and converted to numeric successfully.
+[Global Z-score] 정규화: 전체 기간 통계 사용, 역정규화: per-step rolling 통계 사용 (window=24)
+Date-based split: valid 2024-01~12 (rows 156~167), test 2025-01~12 (rows 168~179)
+[Target Weight] kr_fx=120.0, jp_fx=80.0, us=80.0, others=0.1 (FX 비중: 98.9%)
+Warning: Graph file not found at data/graph.csv. Returning zero matrix.
+train X: torch.Size([108, 48, 33])
+train Y: torch.Size([108, 1, 33])
+valid X: torch.Size([12, 48, 33])
+valid Y: torch.Size([12, 1, 33])
+test X: torch.Size([12, 48, 33])
+test Y: torch.Size([12, 1, 33])
+test window: torch.Size([60, 33])
+length of training set= 108
+length of validation set= 12
+length of testing set= 12
+valid= 144
+Auto-detected num_nodes: 33
+Namespace(data='/Users/samrobert/Documents/GitHub/single/AXIS/data/sm_data.csv', log_interval=2000, save='/Users/samrobert/Documents/GitHub/single/AXIS/model/Bayesian/model_1m.pt', optim='adam', L1Loss=True, normalize=3, device='cuda:1', gcn_true=True, buildA_true=True, gcn_depth=1, num_nodes=33, dropout=0.3, subgraph_size=40, node_dim=30, dilation_exponential=2, conv_channels=8, residual_channels=96, skip_channels=192, end_channels=1024, in_dim=1, seq_in_len=48, seq_out_len=1, horizon=1, layers=1, batch_size=8, lr=0.00035, weight_decay=0.00025, clip=5, propalpha=0.6, tanhalpha=0.1, epochs=50, num_split=1, step_size=100, test_smooth_alpha=1.0, test_clamp_ratio=0.001, ensemble_w1m=0.7, ensemble_auto_tune=False, ensemble_tune_steps=21)
+The recpetive field size is 7
+Number of model parameters is 1062193
+begin training
+Experiment: 1
+Iter: 0
+epoch: 1
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 1]
+best sum= 10000000
+best rrse= 10000000
+best rrae= 10000000
+best corr= -10000000
+best smape= 10000000
+best hps= []
+best test rse= 10000000
+best test corr= -10000000
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 4.163
+iter:  1 | loss: 4.239
+iter:  2 | loss: 4.541
+iter:  3 | loss: 1.985
+iter:  4 | loss: 3.161
+iter:  5 | loss: 3.604
+iter:  6 | loss: 2.899
+iter:  7 | loss: 2.993
+iter:  8 | loss: 2.489
+iter:  9 | loss: 2.404
+iter: 10 | loss: 2.798
+iter: 11 | loss: 2.173
+iter: 12 | loss: 2.747
+iter: 13 | loss: 2.691
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0084) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(0.0125) tensor(-0.0096)
+| end of epoch   1 | time:  2.48s | train_loss 3.0772 | valid rse 0.7377 | valid rae 0.8235 | valid corr  0.7991 | valid smape  0.1850 | us_rse 1.2922 | jp_fx_rse 1.9902 | kr_fx_rse 1.3961
+testing r= 5
+rrse= 8766923867047.508 / 7164322157941.714
+********************************************************************************************************
+test rse 1.2237 | test rae 0.9372 | test corr 0.7369| test smape 0.1011
+********************************************************************************************************
+Experiment: 1
+Iter: 0
+epoch: 2
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 2]
+best sum= 0.76206833
+best rrse= 0.7376958718820337
+best rrae= 0.8235076665878296
+best corr= 0.79913515
+best smape= 0.1850228
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 1]
+best test rse= 1.2236920219073755
+best test corr= 0.7369072
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 2.184
+iter:  1 | loss: 1.665
+iter:  2 | loss: 2.171
+iter:  3 | loss: 1.523
+iter:  4 | loss: 1.879
+iter:  5 | loss: 1.807
+iter:  6 | loss: 1.600
+iter:  7 | loss: 1.664
+iter:  8 | loss: 1.671
+iter:  9 | loss: 1.618
+iter: 10 | loss: 1.345
+iter: 11 | loss: 1.593
+iter: 12 | loss: 1.587
+iter: 13 | loss: 2.112
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0097) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(0.0031) tensor(-0.0096)
+| end of epoch   2 | time:  2.75s | train_loss 1.7305 | valid rse 0.5507 | valid rae 0.6082 | valid corr  0.8006 | valid smape  0.1682 | us_rse 1.1045 | jp_fx_rse 1.4467 | kr_fx_rse 1.4585
+testing r= 5
+rrse= 5286768041504.597 / 7164322157941.714
+********************************************************************************************************
+test rse 0.7379 | test rae 0.6865 | test corr 0.8225| test smape 0.1033
+********************************************************************************************************
+Experiment: 1
+Iter: 0
+epoch: 3
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 3]
+best sum= 0.3583157
+best rrse= 0.5507024066542923
+best rrae= 0.6081902384757996
+best corr= 0.8005769
+best smape= 0.16823429
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 2]
+best test rse= 0.7379299708967119
+best test corr= 0.8225029
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 1.466
+iter:  1 | loss: 1.779
+iter:  2 | loss: 1.550
+iter:  3 | loss: 1.479
+iter:  4 | loss: 1.837
+iter:  5 | loss: 1.624
+iter:  6 | loss: 1.448
+iter:  7 | loss: 1.275
+iter:  8 | loss: 1.321
+iter:  9 | loss: 1.919
+iter: 10 | loss: 1.478
+iter: 11 | loss: 2.432
+iter: 12 | loss: 2.048
+iter: 13 | loss: 1.570
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0140) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(0.0042) tensor(-0.0096)
+| end of epoch   3 | time:  2.69s | train_loss 1.6624 | valid rse 0.7559 | valid rae 0.9070 | valid corr  0.7700 | valid smape  0.1747 | us_rse 0.3417 | jp_fx_rse 0.8554 | kr_fx_rse 0.3346
+testing r= 5
+rrse= 4176882745837.6387 / 7164322157941.714
+********************************************************************************************************
+test rse 0.5830 | test rae 0.5416 | test corr 0.7867| test smape 0.1007
+********************************************************************************************************
+Experiment: 1
+Iter: 0
+epoch: 4
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 4]
+best sum= 0.8928133
+best rrse= 0.7558595784196377
+best rrae= 0.9069502353668213
+best corr= 0.7699965
+best smape= 0.17467737
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 3]
+best test rse= 0.5830115751017042
+best test corr= 0.7866765
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 1.548
+iter:  1 | loss: 1.586
+iter:  2 | loss: 1.999
+iter:  3 | loss: 1.699
+iter:  4 | loss: 1.560
+iter:  5 | loss: 1.909
+iter:  6 | loss: 2.285
+iter:  7 | loss: 1.442
+iter:  8 | loss: 1.401
+iter:  9 | loss: 1.621
+iter: 10 | loss: 1.336
+iter: 11 | loss: 1.585
+iter: 12 | loss: 1.649
+iter: 13 | loss: 1.900
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0120) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(-0.0005) tensor(-0.0096)
+| end of epoch   4 | time:  3.19s | train_loss 1.6718 | valid rse 1.1055 | valid rae 1.4522 | valid corr  0.7668 | valid smape  0.1850 | us_rse 0.2345 | jp_fx_rse 0.8882 | kr_fx_rse 0.2816
+Experiment: 1
+Iter: 0
+epoch: 5
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 5]
+best sum= 0.8928133
+best rrse= 0.7558595784196377
+best rrae= 0.9069502353668213
+best corr= 0.7699965
+best smape= 0.17467737
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 3]
+best test rse= 0.5830115751017042
+best test corr= 0.7866765
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 1.647
+iter:  1 | loss: 1.245
+iter:  2 | loss: 1.141
+iter:  3 | loss: 1.278
+iter:  4 | loss: 1.621
+iter:  5 | loss: 1.156
+iter:  6 | loss: 1.560
+iter:  7 | loss: 1.196
+iter:  8 | loss: 0.889
+iter:  9 | loss: 1.255
+iter: 10 | loss: 1.262
+iter: 11 | loss: 1.335
+iter: 12 | loss: 0.856
+iter: 13 | loss: 1.264
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0104) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(-0.0022) tensor(-0.0096)
+| end of epoch   5 | time:  2.94s | train_loss 1.2647 | valid rse 0.8665 | valid rae 0.9001 | valid corr  0.7579 | valid smape  0.1811 | us_rse 0.4236 | jp_fx_rse 1.1613 | kr_fx_rse 0.7215
+Experiment: 1
+Iter: 0
+epoch: 6
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 6]
+best sum= 0.8928133
+best rrse= 0.7558595784196377
+best rrae= 0.9069502353668213
+best corr= 0.7699965
+best smape= 0.17467737
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 3]
+best test rse= 0.5830115751017042
+best test corr= 0.7866765
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 1.453
+iter:  1 | loss: 1.203
+iter:  2 | loss: 1.077
+iter:  3 | loss: 1.143
+iter:  4 | loss: 1.187
+iter:  5 | loss: 1.075
+iter:  6 | loss: 1.421
+iter:  7 | loss: 1.564
+iter:  8 | loss: 1.238
+iter:  9 | loss: 0.820
+iter: 10 | loss: 1.341
+iter: 11 | loss: 1.037
+iter: 12 | loss: 1.119
+iter: 13 | loss: 1.280
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0155) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(0.0023) tensor(-0.0096)
+| end of epoch   6 | time:  3.84s | train_loss 1.2088 | valid rse 1.3733 | valid rae 1.8517 | valid corr  0.7799 | valid smape  0.2016 | us_rse 1.2208 | jp_fx_rse 3.4072 | kr_fx_rse 1.5708
+Experiment: 1
+Iter: 0
+epoch: 7
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 7]
+best sum= 0.8928133
+best rrse= 0.7558595784196377
+best rrae= 0.9069502353668213
+best corr= 0.7699965
+best smape= 0.17467737
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 3]
+best test rse= 0.5830115751017042
+best test corr= 0.7866765
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 2.002
+iter:  1 | loss: 2.709
+iter:  2 | loss: 1.856
+iter:  3 | loss: 1.790
+iter:  4 | loss: 0.999
+iter:  5 | loss: 1.592
+iter:  6 | loss: 1.883
+iter:  7 | loss: 2.007
+iter:  8 | loss: 1.800
+iter:  9 | loss: 1.228
+iter: 10 | loss: 1.001
+iter: 11 | loss: 1.632
+iter: 12 | loss: 1.132
+iter: 13 | loss: 0.897
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0103) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(-0.0003) tensor(-0.0096)
+| end of epoch   7 | time:  3.48s | train_loss 1.6355 | valid rse 1.0131 | valid rae 1.2446 | valid corr  0.7462 | valid smape  0.1647 | us_rse 0.5523 | jp_fx_rse 0.7070 | kr_fx_rse 0.6275
+Experiment: 1
+Iter: 0
+epoch: 8
+hp= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 8]
+best sum= 0.8928133
+best rrse= 0.7558595784196377
+best rrae= 0.9069502353668213
+best corr= 0.7699965
+best smape= 0.17467737
+best hps= [1, 0.00035, 8, 96, 192, 1024, 40, 0.3, 2, 30, 0.6, 0.1, 1, 3]
+best test rse= 0.5830115751017042
+best test corr= 0.7866765
+[Target-Weighted Loss] weights applied: {'us_Trade Weighted Dollar Index': 20.0, 'kr_fx': 95.0, 'jp_fx': 25.0}
+iter:  0 | loss: 1.097
+iter:  1 | loss: 1.236
+iter:  2 | loss: 1.539
+iter:  3 | loss: 1.657
+iter:  4 | loss: 1.507
+iter:  5 | loss: 1.076
+iter:  6 | loss: 1.167
+iter:  7 | loss: 1.044
+iter:  8 | loss: 0.952
+iter:  9 | loss: 1.142
+iter: 10 | loss: 1.421
+iter: 11 | loss: 1.398
+iter: 12 | loss: 1.245
+iter: 13 | loss: 1.698
+validation r= 5
+EVALUATE RESULTS:
+tensor(0.0092) tensor(0.0019)
+EVALUATE RESULTS:
+tensor(0.0041) tensor(-0.0096)
+| end of epoch   8 | time:  2.87s | train_loss 1.2837 | valid rse 2.1275 | valid rae 2.5828 | valid corr  0.7492 | valid smape  0.1875 | us_rse 1.6786 | jp_fx_rse 3.1880 | kr_fx_rse 2.4629
