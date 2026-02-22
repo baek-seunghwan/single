@@ -1,0 +1,1213 @@
+Tuner controller started. Polling /Users/samrobert/Documents/GitHub/single/auto_tune_logs
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b4 test rse= 1.3141
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b4 test rse= 0.7775
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b4 test rse= 0.7775
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b4 test rse= 1.4481
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6318
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.8018
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 1.0811
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 1.0811
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.7045
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b4 test rse= 0.4733
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b4.log
+Launched full train pid 74750 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b4.log
+Full train test rse: 0.471 vars: {'us_rse': 0.5936, 'jp_fx_rse': 1.3604, 'kr_fx_rse': 0.7924}
+Target not met yet. kr/jp/us: 0.7924 1.3604 0.5936
+Increasing TARGET_KR_MULT to 1.5
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b4.log
+Launched full train pid 74939 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b4.log
+Full train test rse: 0.4588 vars: {'us_rse': 0.2294, 'jp_fx_rse': 0.6829, 'kr_fx_rse': 0.2778}
+Target not met yet. kr/jp/us: 0.2778 0.6829 0.2294
+Increasing TARGET_KR_MULT to 2.25
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b4 test rse= 0.6912
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b4 test rse= 0.6912
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b8 test rse= 0.4835
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b8.log
+Launched full train pid 75870 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.4263, 'jp_fx_rse': 1.947, 'kr_fx_rse': 0.4626}
+Target not met yet. kr/jp/us: 0.4626 1.947 0.4263
+Increasing TARGET_KR_MULT to 3.375
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b8.log
+Launched full train pid 76348 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.2034, 'jp_fx_rse': 1.1077, 'kr_fx_rse': 0.4363}
+Target not met yet. kr/jp/us: 0.4363 1.1077 0.2034
+Increasing TARGET_KR_MULT to 5.0625
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b8.log
+Launched full train pid 76446 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us1.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.6054, 'jp_fx_rse': 0.7347, 'kr_fx_rse': 0.6888}
+Target not met yet. kr/jp/us: 0.6888 0.7347 0.6054
+Increasing TARGET_KR_MULT to 7.59375
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.5008
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Launched full train pid 77015 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Full train test rse: 0.5008 vars: {'us_rse': 0.3254, 'jp_fx_rse': 1.2045, 'kr_fx_rse': 0.4192}
+Target not met yet. kr/jp/us: 0.4192 1.2045 0.3254
+Increasing TARGET_KR_MULT to 11.390625
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.4636
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Launched full train pid 77137 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Full train test rse: 0.5008 vars: {'us_rse': 0.4815, 'jp_fx_rse': 1.1091, 'kr_fx_rse': 0.7188}
+Target not met yet. kr/jp/us: 0.7188 1.1091 0.4815
+Increasing TARGET_KR_MULT to 17.0859375
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.4575
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Launched full train pid 77237 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Full train test rse: 0.5008 vars: {'us_rse': 0.5017, 'jp_fx_rse': 1.0924, 'kr_fx_rse': 0.5954}
+Target not met yet. kr/jp/us: 0.5954 1.0924 0.5017
+Increasing TARGET_KR_MULT to 25.62890625
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.4555
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Launched full train pid 77340 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Full train test rse: 0.4732 vars: {'us_rse': 0.7256, 'jp_fx_rse': 1.1481, 'kr_fx_rse': 1.0084}
+Target not met yet. kr/jp/us: 1.0084 1.1481 0.7256
+Increasing TARGET_KR_MULT to 38.443359375
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.4555
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Launched full train pid 77420 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b4.log
+Full train test rse: 0.4732 vars: {'us_rse': 0.6353, 'jp_fx_rse': 0.9284, 'kr_fx_rse': 0.8028}
+Target not met yet. kr/jp/us: 0.8028 0.9284 0.6353
+Increasing TARGET_KR_MULT to 57.6650390625
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us1.0_lr0.00035_b8 test rse= 0.6915
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6774
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.678
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.678
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.678
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.678
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.678
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b8 test rse= 0.4792
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Launched full train pid 78101 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Full train test rse: 0.4898 vars: {'us_rse': 1.2922, 'jp_fx_rse': 1.9902, 'kr_fx_rse': 1.3961}
+Target not met yet. kr/jp/us: 1.3961 1.9902 1.2922
+Increasing TARGET_KR_MULT to 86.49755859375
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b8 test rse= 0.4564
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Launched full train pid 78214 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Full train test rse: 0.4898 vars: {'us_rse': 0.7458, 'jp_fx_rse': 2.0116, 'kr_fx_rse': 0.6917}
+Target not met yet. kr/jp/us: 0.6917 2.0116 0.7458
+Increasing TARGET_KR_MULT to 129.746337890625
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b8 test rse= 0.4564
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Launched full train pid 78294 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Full train test rse: 0.4898 vars: {'us_rse': 1.0417, 'jp_fx_rse': 2.0264, 'kr_fx_rse': 1.2656}
+Target not met yet. kr/jp/us: 1.2656 2.0264 1.0417
+Increasing TARGET_KR_MULT to 194.6195068359375
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b8 test rse= 0.4564
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Launched full train pid 78408 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Full train test rse: 0.4564 vars: {'us_rse': 0.5485, 'jp_fx_rse': 0.9002, 'kr_fx_rse': 0.7419}
+Target not met yet. kr/jp/us: 0.7419 0.9002 0.5485
+Increasing TARGET_KR_MULT to 291.92926025390625
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b8 test rse= 0.4678
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Launched full train pid 78509 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Full train test rse: 0.4564 vars: {'us_rse': 0.2986, 'jp_fx_rse': 1.0122, 'kr_fx_rse': 0.4683}
+Target not met yet. kr/jp/us: 0.4683 1.0122 0.2986
+Increasing TARGET_KR_MULT to 437.8938903808594
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b8 test rse= 0.4678
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.00035 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Launched full train pid 78613 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.00035_b8.log
+Full train test rse: 0.4678 vars: {'us_rse': 0.4122, 'jp_fx_rse': 0.6073, 'kr_fx_rse': 0.3391}
+Target not met yet. kr/jp/us: 0.3391 0.6073 0.4122
+Increasing TARGET_KR_MULT to 656.8408355712891
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4667
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 79551 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4937 vars: {'us_rse': 0.8781, 'jp_fx_rse': 1.6721, 'kr_fx_rse': 1.096}
+Target not met yet. kr/jp/us: 1.096 1.6721 0.8781
+Increasing TARGET_KR_MULT to 985.2612533569336
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4861
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 79692 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.4965, 'jp_fx_rse': 1.5875, 'kr_fx_rse': 0.5547}
+Target not met yet. kr/jp/us: 0.5547 1.5875 0.4965
+Increasing TARGET_KR_MULT to 1477.8918800354004
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4733
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 79779 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4733 vars: {'us_rse': 0.5207, 'jp_fx_rse': 0.8451, 'kr_fx_rse': 0.4409}
+Target not met yet. kr/jp/us: 0.4409 0.8451 0.5207
+Increasing TARGET_KR_MULT to 2216.8378200531006
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4733
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 79912 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.4924, 'jp_fx_rse': 1.157, 'kr_fx_rse': 0.7511}
+Target not met yet. kr/jp/us: 0.7511 1.157 0.4924
+Increasing TARGET_KR_MULT to 3325.256730079651
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4733
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 80016 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.6629, 'jp_fx_rse': 1.1134, 'kr_fx_rse': 0.834}
+Target not met yet. kr/jp/us: 0.834 1.1134 0.6629
+Increasing TARGET_KR_MULT to 4987.885095119476
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4603
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 80320 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4779 vars: {'us_rse': 0.4547, 'jp_fx_rse': 0.719, 'kr_fx_rse': 0.4349}
+Target not met yet. kr/jp/us: 0.4349 0.719 0.4547
+Increasing TARGET_KR_MULT to 7481.8276426792145
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 84447 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4603 vars: {'us_rse': 0.3101, 'jp_fx_rse': 0.8485, 'kr_fx_rse': 0.2842}
+Target not met yet. kr/jp/us: 0.2842 0.8485 0.3101
+Increasing TARGET_KR_MULT to 11222.741464018822
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 84555 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4588 vars: {'us_rse': 0.2294, 'jp_fx_rse': 0.6829, 'kr_fx_rse': 0.2778}
+Target not met yet. kr/jp/us: 0.2778 0.6829 0.2294
+Increasing TARGET_KR_MULT to 16834.112196028233
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 84701 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4732 vars: {'us_rse': 0.3251, 'jp_fx_rse': 0.8562, 'kr_fx_rse': 0.4036}
+Target not met yet. kr/jp/us: 0.4036 0.8562 0.3251
+Increasing TARGET_KR_MULT to 25251.16829404235
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 84780 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4733 vars: {'us_rse': 0.4764, 'jp_fx_rse': 0.9106, 'kr_fx_rse': 0.7004}
+Target not met yet. kr/jp/us: 0.7004 0.9106 0.4764
+Increasing TARGET_KR_MULT to 37876.75244106352
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 84871 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.3449, 'jp_fx_rse': 1.0632, 'kr_fx_rse': 0.4255}
+Target not met yet. kr/jp/us: 0.4255 1.0632 0.3449
+Increasing TARGET_KR_MULT to 56815.128661595285
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 84980 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.59, 'jp_fx_rse': 0.9334, 'kr_fx_rse': 0.6237}
+Target not met yet. kr/jp/us: 0.6237 0.9334 0.59
+Increasing TARGET_KR_MULT to 85222.69299239293
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85092 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.4424, 'jp_fx_rse': 0.7473, 'kr_fx_rse': 0.4878}
+Target not met yet. kr/jp/us: 0.4878 0.7473 0.4424
+Increasing TARGET_KR_MULT to 127834.03948858939
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85181 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4588 vars: {'us_rse': 0.581, 'jp_fx_rse': 0.7589, 'kr_fx_rse': 0.6281}
+Target not met yet. kr/jp/us: 0.6281 0.7589 0.581
+Increasing TARGET_KR_MULT to 191751.0592328841
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85328 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4603 vars: {'us_rse': 0.5425, 'jp_fx_rse': 0.6989, 'kr_fx_rse': 0.5209}
+Target not met yet. kr/jp/us: 0.5209 0.6989 0.5425
+Increasing TARGET_KR_MULT to 287626.58884932613
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85407 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4732 vars: {'us_rse': 0.59, 'jp_fx_rse': 0.9334, 'kr_fx_rse': 0.6237}
+Target not met yet. kr/jp/us: 0.6237 0.9334 0.59
+Increasing TARGET_KR_MULT to 431439.8832739892
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85477 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 1.0283, 'jp_fx_rse': 1.0966, 'kr_fx_rse': 1.1647}
+Target not met yet. kr/jp/us: 1.1647 1.0966 1.0283
+Increasing TARGET_KR_MULT to 647159.8249109838
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85561 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4733 vars: {'us_rse': 0.4208, 'jp_fx_rse': 1.1199, 'kr_fx_rse': 0.61}
+Target not met yet. kr/jp/us: 0.61 1.1199 0.4208
+Increasing TARGET_KR_MULT to 970739.7373664756
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85647 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4732 vars: {'us_rse': 0.392, 'jp_fx_rse': 1.3091, 'kr_fx_rse': 0.2624}
+Target not met yet. kr/jp/us: 0.2624 1.3091 0.392
+Increasing TARGET_KR_MULT to 1456109.6060497134
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85707 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4588 vars: {'us_rse': 0.3128, 'jp_fx_rse': 0.6776, 'kr_fx_rse': 0.4825}
+Target not met yet. kr/jp/us: 0.4825 0.6776 0.3128
+Increasing TARGET_KR_MULT to 2184164.40907457
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85789 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4779 vars: {'us_rse': 0.5208, 'jp_fx_rse': 0.6545, 'kr_fx_rse': 0.5326}
+Target not met yet. kr/jp/us: 0.5326 0.6545 0.5208
+Increasing TARGET_KR_MULT to 3276246.613611855
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 85864 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4861 vars: {'us_rse': 0.5515, 'jp_fx_rse': 0.6105, 'kr_fx_rse': 0.6063}
+Target not met yet. kr/jp/us: 0.6063 0.6105 0.5515
+Increasing TARGET_KR_MULT to 4914369.920417783
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 86008 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4603 vars: {'us_rse': 0.6629, 'jp_fx_rse': 1.1134, 'kr_fx_rse': 0.834}
+Target not met yet. kr/jp/us: 0.834 1.1134 0.6629
+Increasing TARGET_KR_MULT to 7371554.880626675
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b4 test rse= 0.4588
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=4 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Launched full train pid 86065 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b4.log
+Full train test rse: 0.4779 vars: {'us_rse': 0.3128, 'jp_fx_rse': 0.6776, 'kr_fx_rse': 0.4825}
+Target not met yet. kr/jp/us: 0.4825 0.6776 0.3128
+Increasing TARGET_KR_MULT to 11057332.320940012
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.00035_b4 test rse= 0.6784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.5054
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 88662 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 2.9557, 'jp_fx_rse': 5.4765, 'kr_fx_rse': 3.6523}
+Target not met yet. kr/jp/us: 3.6523 5.4765 2.9557
+Increasing TARGET_KR_MULT to 16585998.48141002
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4843
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 88828 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.2894, 'jp_fx_rse': 3.7527, 'kr_fx_rse': 1.8399}
+Target not met yet. kr/jp/us: 1.8399 3.7527 1.2894
+Increasing TARGET_KR_MULT to 24878997.72211503
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4835
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 88888 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.6918, 'jp_fx_rse': 1.0056, 'kr_fx_rse': 0.8973}
+Target not met yet. kr/jp/us: 0.8973 1.0056 0.6918
+Increasing TARGET_KR_MULT to 37318496.583172545
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4835
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 88941 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.4263, 'jp_fx_rse': 1.947, 'kr_fx_rse': 0.4626}
+Target not met yet. kr/jp/us: 0.4626 1.947 0.4263
+Increasing TARGET_KR_MULT to 55977744.87475882
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4835
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89036 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.7408, 'jp_fx_rse': 1.0277, 'kr_fx_rse': 0.9341}
+Target not met yet. kr/jp/us: 0.9341 1.0277 0.7408
+Increasing TARGET_KR_MULT to 83966617.31213823
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.5178
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89158 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.4263, 'jp_fx_rse': 1.947, 'kr_fx_rse': 0.4626}
+Target not met yet. kr/jp/us: 0.4626 1.947 0.4263
+Increasing TARGET_KR_MULT to 125949925.96820734
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89247 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.7408, 'jp_fx_rse': 1.0277, 'kr_fx_rse': 0.9341}
+Target not met yet. kr/jp/us: 0.9341 1.0277 0.7408
+Increasing TARGET_KR_MULT to 188924888.952311
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89343 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.9593, 'jp_fx_rse': 1.3213, 'kr_fx_rse': 1.187}
+Target not met yet. kr/jp/us: 1.187 1.3213 0.9593
+Increasing TARGET_KR_MULT to 283387333.4284665
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89427 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 425081000.1426997
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89477 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 2.9557, 'jp_fx_rse': 5.4765, 'kr_fx_rse': 3.6523}
+Target not met yet. kr/jp/us: 3.6523 5.4765 2.9557
+Increasing TARGET_KR_MULT to 637621500.2140496
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89524 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.268, 'jp_fx_rse': 1.9288, 'kr_fx_rse': 0.5626}
+Target not met yet. kr/jp/us: 0.5626 1.9288 0.268
+Increasing TARGET_KR_MULT to 956432250.3210744
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89647 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {}
+Full train test rse: 0.4843 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 1434648375.4816115
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89714 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.9759, 'jp_fx_rse': 0.957, 'kr_fx_rse': 1.0766}
+Target not met yet. kr/jp/us: 1.0766 0.957 0.9759
+Increasing TARGET_KR_MULT to 2151972563.2224174
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89754 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 1.2894, 'jp_fx_rse': 3.7527, 'kr_fx_rse': 1.8399}
+Target not met yet. kr/jp/us: 1.8399 3.7527 1.2894
+Increasing TARGET_KR_MULT to 3227958844.833626
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89813 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.4594, 'jp_fx_rse': 1.0796, 'kr_fx_rse': 0.4235}
+Target not met yet. kr/jp/us: 0.4235 1.0796 0.4594
+Increasing TARGET_KR_MULT to 4841938267.250439
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89838 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 7262907400.875658
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89911 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 10894361101.313488
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89966 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.9593, 'jp_fx_rse': 1.3213, 'kr_fx_rse': 1.187}
+Target not met yet. kr/jp/us: 1.187 1.3213 0.9593
+Increasing TARGET_KR_MULT to 16341541651.970232
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 89998 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.9759, 'jp_fx_rse': 0.957, 'kr_fx_rse': 1.0766}
+Target not met yet. kr/jp/us: 1.0766 0.957 0.9759
+Increasing TARGET_KR_MULT to 24512312477.95535
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90034 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 36768468716.93302
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90122 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.4782, 'jp_fx_rse': 0.8838, 'kr_fx_rse': 0.6504}
+Target not met yet. kr/jp/us: 0.6504 0.8838 0.4782
+Increasing TARGET_KR_MULT to 55152703075.399536
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90184 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 1.2894, 'jp_fx_rse': 3.7527, 'kr_fx_rse': 1.8399}
+Target not met yet. kr/jp/us: 1.8399 3.7527 1.2894
+Increasing TARGET_KR_MULT to 82729054613.0993
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90216 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 1.4666, 'jp_fx_rse': 1.5124, 'kr_fx_rse': 1.666}
+Target not met yet. kr/jp/us: 1.666 1.5124 1.4666
+Increasing TARGET_KR_MULT to 124093581919.64896
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90283 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.9593, 'jp_fx_rse': 1.3213, 'kr_fx_rse': 1.187}
+Target not met yet. kr/jp/us: 1.187 1.3213 0.9593
+Increasing TARGET_KR_MULT to 186140372879.47345
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90338 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.6268, 'jp_fx_rse': 0.8474, 'kr_fx_rse': 0.7043}
+Target not met yet. kr/jp/us: 0.7043 0.8474 0.6268
+Increasing TARGET_KR_MULT to 279210559319.2102
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90432 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.4666, 'jp_fx_rse': 1.5124, 'kr_fx_rse': 1.666}
+Target not met yet. kr/jp/us: 1.666 1.5124 1.4666
+Increasing TARGET_KR_MULT to 418815838978.8153
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90527 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {}
+Full train test rse: 0.4932 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 628223758468.2229
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90584 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.4263, 'jp_fx_rse': 1.947, 'kr_fx_rse': 0.4626}
+Target not met yet. kr/jp/us: 0.4626 1.947 0.4263
+Increasing TARGET_KR_MULT to 942335637702.3344
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90679 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 1413503456553.5015
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90762 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.5021, 'jp_fx_rse': 1.146, 'kr_fx_rse': 0.8243}
+Target not met yet. kr/jp/us: 0.8243 1.146 0.5021
+Increasing TARGET_KR_MULT to 2120255184830.2522
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90809 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 2.9557, 'jp_fx_rse': 5.4765, 'kr_fx_rse': 3.6523}
+Target not met yet. kr/jp/us: 3.6523 5.4765 2.9557
+Increasing TARGET_KR_MULT to 3180382777245.3784
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90877 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 4770574165868.067
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 90954 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 7155861248802.102
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91011 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 10733791873203.152
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91072 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.7523, 'jp_fx_rse': 0.7946, 'kr_fx_rse': 0.7984}
+Target not met yet. kr/jp/us: 0.7984 0.7946 0.7523
+Increasing TARGET_KR_MULT to 16100687809804.729
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91126 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 1.4666, 'jp_fx_rse': 1.5124, 'kr_fx_rse': 1.666}
+Target not met yet. kr/jp/us: 1.666 1.5124 1.4666
+Increasing TARGET_KR_MULT to 24151031714707.094
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91200 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.8008, 'jp_fx_rse': 0.5809, 'kr_fx_rse': 0.6813}
+Target not met yet. kr/jp/us: 0.6813 0.5809 0.8008
+Increasing TARGET_KR_MULT to 36226547572060.64
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91261 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.4666, 'jp_fx_rse': 1.5124, 'kr_fx_rse': 1.666}
+Target not met yet. kr/jp/us: 1.666 1.5124 1.4666
+Increasing TARGET_KR_MULT to 54339821358090.96
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91319 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 81509732037136.44
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91362 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.7523, 'jp_fx_rse': 0.7946, 'kr_fx_rse': 0.7984}
+Target not met yet. kr/jp/us: 0.7984 0.7946 0.7523
+Increasing TARGET_KR_MULT to 122264598055704.66
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91393 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 183396897083557.0
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91449 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.4628, 'jp_fx_rse': 0.7459, 'kr_fx_rse': 0.6375}
+Target not met yet. kr/jp/us: 0.6375 0.7459 0.4628
+Increasing TARGET_KR_MULT to 275095345625335.5
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91559 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 412643018438003.25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91634 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 618964527657004.9
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91740 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.7523, 'jp_fx_rse': 0.7946, 'kr_fx_rse': 0.7984}
+Target not met yet. kr/jp/us: 0.7984 0.7946 0.7523
+Increasing TARGET_KR_MULT to 928446791485507.2
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4932
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91798 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.7523, 'jp_fx_rse': 0.7946, 'kr_fx_rse': 0.7984}
+Target not met yet. kr/jp/us: 0.7984 0.7946 0.7523
+Increasing TARGET_KR_MULT to 1392670187228261.0
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 91869 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.5021, 'jp_fx_rse': 1.146, 'kr_fx_rse': 0.8243}
+Target not met yet. kr/jp/us: 0.8243 1.146 0.5021
+Increasing TARGET_KR_MULT to 2089005280842391.5
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92025 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.6268, 'jp_fx_rse': 0.8474, 'kr_fx_rse': 0.7043}
+Target not met yet. kr/jp/us: 0.7043 0.8474 0.6268
+Increasing TARGET_KR_MULT to 3133507921263587.0
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92125 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 4700261881895380.0
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92247 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 1.2894, 'jp_fx_rse': 3.7527, 'kr_fx_rse': 1.8399}
+Target not met yet. kr/jp/us: 1.8399 3.7527 1.2894
+Increasing TARGET_KR_MULT to 7050392822843070.0
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92381 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 1.0575589234264604e+16
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92555 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.8193, 'jp_fx_rse': 1.0906, 'kr_fx_rse': 1.0885}
+Target not met yet. kr/jp/us: 1.0885 1.0906 0.8193
+Increasing TARGET_KR_MULT to 1.5863383851396906e+16
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92668 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.6268, 'jp_fx_rse': 0.8474, 'kr_fx_rse': 0.7043}
+Target not met yet. kr/jp/us: 0.7043 0.8474 0.6268
+Increasing TARGET_KR_MULT to 2.379507577709536e+16
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92812 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.7523, 'jp_fx_rse': 0.7946, 'kr_fx_rse': 0.7984}
+Target not met yet. kr/jp/us: 0.7984 0.7946 0.7523
+Increasing TARGET_KR_MULT to 3.569261366564304e+16
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 92960 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.3431, 'jp_fx_rse': 1.8526, 'kr_fx_rse': 0.4929}
+Target not met yet. kr/jp/us: 0.4929 1.8526 0.3431
+Increasing TARGET_KR_MULT to 5.353892049846456e+16
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 93130 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 8.030838074769683e+16
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 93276 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.4628, 'jp_fx_rse': 0.7459, 'kr_fx_rse': 0.6375}
+Target not met yet. kr/jp/us: 0.6375 0.7459 0.4628
+Increasing TARGET_KR_MULT to 1.2046257112154525e+17
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 93465 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 1.4666, 'jp_fx_rse': 1.5124, 'kr_fx_rse': 1.666}
+Target not met yet. kr/jp/us: 1.666 1.5124 1.4666
+Increasing TARGET_KR_MULT to 1.806938566823179e+17
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4631
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 93591 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.9593, 'jp_fx_rse': 1.3213, 'kr_fx_rse': 1.187}
+Target not met yet. kr/jp/us: 1.187 1.3213 0.9593
+Increasing TARGET_KR_MULT to 2.7104078502347683e+17
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4749
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 93805 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 4.065611775352152e+17
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4749
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 94033 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.8008, 'jp_fx_rse': 0.5809, 'kr_fx_rse': 0.6813}
+Target not met yet. kr/jp/us: 0.6813 0.5809 0.8008
+Increasing TARGET_KR_MULT to 6.098417663028229e+17
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4749
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 94185 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.4628, 'jp_fx_rse': 0.7459, 'kr_fx_rse': 0.6375}
+Target not met yet. kr/jp/us: 0.6375 0.7459 0.4628
+Increasing TARGET_KR_MULT to 9.147626494542344e+17
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4749
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 94739 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.5906, 'jp_fx_rse': 0.9922, 'kr_fx_rse': 0.7344}
+Target not met yet. kr/jp/us: 0.7344 0.9922 0.5906
+Increasing TARGET_KR_MULT to 1.3721439741813514e+18
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4749
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 94995 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4631 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 2.0582159612720271e+18
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 95189 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.9759, 'jp_fx_rse': 0.957, 'kr_fx_rse': 1.0766}
+Target not met yet. kr/jp/us: 1.0766 0.957 0.9759
+Increasing TARGET_KR_MULT to 3.0873239419080407e+18
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 95385 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4787 vars: {'us_rse': 0.7677, 'jp_fx_rse': 0.9799, 'kr_fx_rse': 0.9388}
+Target not met yet. kr/jp/us: 0.9388 0.9799 0.7677
+Increasing TARGET_KR_MULT to 4.630985912862061e+18
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 95547 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 6.946478869293091e+18
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 95730 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.268, 'jp_fx_rse': 1.9288, 'kr_fx_rse': 0.5626}
+Target not met yet. kr/jp/us: 0.5626 1.9288 0.268
+Increasing TARGET_KR_MULT to 1.0419718303939637e+19
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 95944 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.8193, 'jp_fx_rse': 1.0906, 'kr_fx_rse': 1.0885}
+Target not met yet. kr/jp/us: 1.0885 1.0906 0.8193
+Increasing TARGET_KR_MULT to 1.5629577455909456e+19
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 96125 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.7523, 'jp_fx_rse': 0.7946, 'kr_fx_rse': 0.7984}
+Target not met yet. kr/jp/us: 0.7984 0.7946 0.7523
+Increasing TARGET_KR_MULT to 2.3444366183864185e+19
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 96456 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4631 vars: {'us_rse': 0.6905, 'jp_fx_rse': 0.6338, 'kr_fx_rse': 0.7079}
+Target not met yet. kr/jp/us: 0.7079 0.6338 0.6905
+Increasing TARGET_KR_MULT to 3.5166549275796275e+19
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 96681 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.2034, 'jp_fx_rse': 1.1077, 'kr_fx_rse': 0.4363}
+Target not met yet. kr/jp/us: 0.4363 1.1077 0.2034
+Increasing TARGET_KR_MULT to 5.274982391369441e+19
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 96894 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.3431, 'jp_fx_rse': 1.8526, 'kr_fx_rse': 0.4929}
+Target not met yet. kr/jp/us: 0.4929 1.8526 0.3431
+Increasing TARGET_KR_MULT to 7.912473587054163e+19
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 97114 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4631 vars: {'us_rse': 0.829, 'jp_fx_rse': 1.1298, 'kr_fx_rse': 0.9351}
+Target not met yet. kr/jp/us: 0.9351 1.1298 0.829
+Increasing TARGET_KR_MULT to 1.1868710380581244e+20
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 97343 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 1.7803065570871866e+20
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 97605 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.6268, 'jp_fx_rse': 0.8474, 'kr_fx_rse': 0.7043}
+Target not met yet. kr/jp/us: 0.7043 0.8474 0.6268
+Increasing TARGET_KR_MULT to 2.6704598356307798e+20
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 97798 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.2894, 'jp_fx_rse': 3.7527, 'kr_fx_rse': 1.8399}
+Target not met yet. kr/jp/us: 1.8399 3.7527 1.2894
+Increasing TARGET_KR_MULT to 4.00568975344617e+20
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 97981 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {}
+Full train test rse: 0.4932 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 6.008534630169256e+20
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 98384 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.3431, 'jp_fx_rse': 1.8526, 'kr_fx_rse': 0.4929}
+Target not met yet. kr/jp/us: 0.4929 1.8526 0.3431
+Increasing TARGET_KR_MULT to 9.012801945253883e+20
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 98637 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.7677, 'jp_fx_rse': 0.9799, 'kr_fx_rse': 0.9388}
+Target not met yet. kr/jp/us: 0.9388 0.9799 0.7677
+Increasing TARGET_KR_MULT to 1.3519202917880824e+21
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 98915 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.4628, 'jp_fx_rse': 0.7459, 'kr_fx_rse': 0.6375}
+Target not met yet. kr/jp/us: 0.6375 0.7459 0.4628
+Increasing TARGET_KR_MULT to 2.0278804376821236e+21
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 99389 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.6918, 'jp_fx_rse': 1.0056, 'kr_fx_rse': 0.8973}
+Target not met yet. kr/jp/us: 0.8973 1.0056 0.6918
+Increasing TARGET_KR_MULT to 3.0418206565231855e+21
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 99681 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 4.562730984784778e+21
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 99840 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.2034, 'jp_fx_rse': 1.1077, 'kr_fx_rse': 0.4363}
+Target not met yet. kr/jp/us: 0.4363 1.1077 0.2034
+Increasing TARGET_KR_MULT to 6.844096477177166e+21
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 393 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {}
+Full train test rse: 0.5146 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 1.0266144715765749e+22
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 675 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.5906, 'jp_fx_rse': 0.9922, 'kr_fx_rse': 0.7344}
+Target not met yet. kr/jp/us: 0.7344 0.9922 0.5906
+Increasing TARGET_KR_MULT to 1.5399217073648623e+22
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 1272 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {}
+Full train test rse: 0.4932 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 2.3098825610472934e+22
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 1827 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.6854, 'jp_fx_rse': 0.8634, 'kr_fx_rse': 0.8739}
+Target not met yet. kr/jp/us: 0.8739 0.8634 0.6854
+Increasing TARGET_KR_MULT to 3.46482384157094e+22
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 2119 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.5021, 'jp_fx_rse': 1.146, 'kr_fx_rse': 0.8243}
+Target not met yet. kr/jp/us: 0.8243 1.146 0.5021
+Increasing TARGET_KR_MULT to 5.19723576235641e+22
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 2408 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.4782, 'jp_fx_rse': 0.8838, 'kr_fx_rse': 0.6504}
+Target not met yet. kr/jp/us: 0.6504 0.8838 0.4782
+Increasing TARGET_KR_MULT to 7.795853643534614e+22
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 2785 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.5033, 'jp_fx_rse': 0.786, 'kr_fx_rse': 0.5076}
+Target not met yet. kr/jp/us: 0.5076 0.786 0.5033
+Increasing TARGET_KR_MULT to 1.1693780465301921e+23
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 3232 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.829, 'jp_fx_rse': 1.1298, 'kr_fx_rse': 0.9351}
+Target not met yet. kr/jp/us: 0.9351 1.1298 0.829
+Increasing TARGET_KR_MULT to 1.754067069795288e+23
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 3466 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.8008, 'jp_fx_rse': 0.5809, 'kr_fx_rse': 0.6813}
+Target not met yet. kr/jp/us: 0.6813 0.5809 0.8008
+Increasing TARGET_KR_MULT to 2.631100604692932e+23
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 3750 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 3.946650907039398e+23
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 4068 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 5.919976360559097e+23
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 9227 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 8.879964540838645e+23
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 10516 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 1.331994681125797e+24
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 14137 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.4628, 'jp_fx_rse': 0.7459, 'kr_fx_rse': 0.6375}
+Target not met yet. kr/jp/us: 0.6375 0.7459 0.4628
+Increasing TARGET_KR_MULT to 1.9979920216886954e+24
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4787
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 16798 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 2.996988032533043e+24
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 17632 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.2899, 'jp_fx_rse': 0.8795, 'kr_fx_rse': 0.3288}
+Target not met yet. kr/jp/us: 0.3288 0.8795 0.2899
+Increasing TARGET_KR_MULT to 4.4954820487995644e+24
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 18068 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 6.743223073199347e+24
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 18317 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4649 vars: {'us_rse': 0.644, 'jp_fx_rse': 0.7568, 'kr_fx_rse': 0.7887}
+Target not met yet. kr/jp/us: 0.7887 0.7568 0.644
+Increasing TARGET_KR_MULT to 1.011483460979902e+25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 18625 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4631 vars: {'us_rse': 0.6905, 'jp_fx_rse': 0.6338, 'kr_fx_rse': 0.7079}
+Target not met yet. kr/jp/us: 0.7079 0.6338 0.6905
+Increasing TARGET_KR_MULT to 1.517225191469853e+25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 18866 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 2.2758377872047795e+25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 19104 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 3.4137566808071693e+25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 19574 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 5.120635021210754e+25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 25848 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.6585, 'jp_fx_rse': 0.7298, 'kr_fx_rse': 0.5974}
+Target not met yet. kr/jp/us: 0.5974 0.7298 0.6585
+Increasing TARGET_KR_MULT to 7.6809525318161305e+25
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 25989 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.5033, 'jp_fx_rse': 0.786, 'kr_fx_rse': 0.5076}
+Target not met yet. kr/jp/us: 0.5076 0.786 0.5033
+Increasing TARGET_KR_MULT to 1.1521428797724195e+26
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 29056 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.865, 'jp_fx_rse': 0.7665, 'kr_fx_rse': 0.9991}
+Target not met yet. kr/jp/us: 0.9991 0.7665 0.865
+Increasing TARGET_KR_MULT to 1.7282143196586292e+26
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 34767 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4749 vars: {}
+Full train test rse: 0.4749 vars: {'us_rse': 0.5021, 'jp_fx_rse': 1.146, 'kr_fx_rse': 0.8243}
+Target not met yet. kr/jp/us: 0.8243 1.146 0.5021
+Increasing TARGET_KR_MULT to 2.592321479487944e+26
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 34902 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.854, 'jp_fx_rse': 0.793, 'kr_fx_rse': 0.7802}
+Target not met yet. kr/jp/us: 0.7802 0.793 0.854
+Increasing TARGET_KR_MULT to 3.888482219231916e+26
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 35078 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {}
+Full train test rse: 0.5178 vars: {'us_rse': 0.6854, 'jp_fx_rse': 0.8634, 'kr_fx_rse': 0.8739}
+Target not met yet. kr/jp/us: 0.8739 0.8634 0.6854
+Increasing TARGET_KR_MULT to 5.8327233288478744e+26
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 36143 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 8.749084993271811e+26
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 37054 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 1.3123627489907715e+27
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 37412 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.6585, 'jp_fx_rse': 0.7298, 'kr_fx_rse': 0.5974}
+Target not met yet. kr/jp/us: 0.5974 0.7298 0.6585
+Increasing TARGET_KR_MULT to 1.9685441234861572e+27
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 38172 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.3262, 'jp_fx_rse': 1.2282, 'kr_fx_rse': 0.6098}
+Target not met yet. kr/jp/us: 0.6098 1.2282 0.3262
+Increasing TARGET_KR_MULT to 2.952816185229236e+27
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 38263 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {'us_rse': 0.3431, 'jp_fx_rse': 1.8526, 'kr_fx_rse': 0.4929}
+Target not met yet. kr/jp/us: 0.4929 1.8526 0.3431
+Increasing TARGET_KR_MULT to 4.4292242778438535e+27
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 39481 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.268, 'jp_fx_rse': 1.9288, 'kr_fx_rse': 0.5626}
+Target not met yet. kr/jp/us: 0.5626 1.9288 0.268
+Increasing TARGET_KR_MULT to 6.643836416765781e+27
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 40555 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4787 vars: {'us_rse': 0.5033, 'jp_fx_rse': 0.786, 'kr_fx_rse': 0.5076}
+Target not met yet. kr/jp/us: 0.5076 0.786 0.5033
+Increasing TARGET_KR_MULT to 9.965754625148672e+27
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 40847 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.8193, 'jp_fx_rse': 1.0906, 'kr_fx_rse': 1.0885}
+Target not met yet. kr/jp/us: 1.0885 1.0906 0.8193
+Increasing TARGET_KR_MULT to 1.4948631937723009e+28
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 41137 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.5906, 'jp_fx_rse': 0.9922, 'kr_fx_rse': 0.7344}
+Target not met yet. kr/jp/us: 0.7344 0.9922 0.5906
+Increasing TARGET_KR_MULT to 2.2422947906584514e+28
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 42128 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.9759, 'jp_fx_rse': 0.957, 'kr_fx_rse': 1.0766}
+Target not met yet. kr/jp/us: 1.0766 0.957 0.9759
+Increasing TARGET_KR_MULT to 3.363442185987677e+28
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 43809 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 5.045163278981516e+28
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 44077 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 7.567744918472274e+28
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 46565 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 1.135161737770841e+29
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 46806 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.644, 'jp_fx_rse': 0.7568, 'kr_fx_rse': 0.7887}
+Target not met yet. kr/jp/us: 0.7887 0.7568 0.644
+Increasing TARGET_KR_MULT to 1.7027426066562615e+29
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 47097 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5054 vars: {'us_rse': 0.2899, 'jp_fx_rse': 0.8795, 'kr_fx_rse': 0.3288}
+Target not met yet. kr/jp/us: 0.3288 0.8795 0.2899
+Increasing TARGET_KR_MULT to 2.5541139099843925e+29
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 48235 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.2034, 'jp_fx_rse': 1.1077, 'kr_fx_rse': 0.4363}
+Target not met yet. kr/jp/us: 0.4363 1.1077 0.2034
+Increasing TARGET_KR_MULT to 3.831170864976589e+29
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 49297 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4843 vars: {'us_rse': 0.516, 'jp_fx_rse': 1.8088, 'kr_fx_rse': 0.7005}
+Target not met yet. kr/jp/us: 0.7005 1.8088 0.516
+Increasing TARGET_KR_MULT to 5.7467562974648836e+29
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 49804 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.7997, 'jp_fx_rse': 1.1881, 'kr_fx_rse': 1.0796}
+Target not met yet. kr/jp/us: 1.0796 1.1881 0.7997
+Increasing TARGET_KR_MULT to 8.620134446197326e+29
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 50160 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5 vars: {'us_rse': 1.0323, 'jp_fx_rse': 1.71, 'kr_fx_rse': 1.2878}
+Target not met yet. kr/jp/us: 1.2878 1.71 1.0323
+Increasing TARGET_KR_MULT to 1.293020166929599e+30
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 50404 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4631 vars: {'us_rse': 0.3825, 'jp_fx_rse': 0.8193, 'kr_fx_rse': 0.4289}
+Target not met yet. kr/jp/us: 0.4289 0.8193 0.3825
+Increasing TARGET_KR_MULT to 1.9395302503943984e+30
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 51054 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4835 vars: {}
+Full train test rse: 0.4835 vars: {'us_rse': 0.6268, 'jp_fx_rse': 0.8474, 'kr_fx_rse': 0.7043}
+Target not met yet. kr/jp/us: 0.7043 0.8474 0.6268
+Increasing TARGET_KR_MULT to 2.9092953755915977e+30
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 51409 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.5021, 'jp_fx_rse': 1.146, 'kr_fx_rse': 0.8243}
+Target not met yet. kr/jp/us: 0.8243 1.146 0.5021
+Increasing TARGET_KR_MULT to 4.363943063387396e+30
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 52000 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {}
+Full train test rse: 0.5146 vars: {'us_rse': 0.6995, 'jp_fx_rse': 0.7704, 'kr_fx_rse': 0.6503}
+Target not met yet. kr/jp/us: 0.6503 0.7704 0.6995
+Increasing TARGET_KR_MULT to 6.545914595081095e+30
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 53358 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4787 vars: {'us_rse': 0.581, 'jp_fx_rse': 1.2118, 'kr_fx_rse': 0.5828}
+Target not met yet. kr/jp/us: 0.5828 1.2118 0.581
+Increasing TARGET_KR_MULT to 9.818871892621642e+30
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 53602 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4749 vars: {'us_rse': 0.3431, 'jp_fx_rse': 1.8526, 'kr_fx_rse': 0.4929}
+Target not met yet. kr/jp/us: 0.4929 1.8526 0.3431
+Increasing TARGET_KR_MULT to 1.4728307838932463e+31
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 53936 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5146 vars: {'us_rse': 0.5033, 'jp_fx_rse': 0.786, 'kr_fx_rse': 0.5076}
+Target not met yet. kr/jp/us: 0.5076 0.786 0.5033
+Increasing TARGET_KR_MULT to 2.2092461758398696e+31
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 54278 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.4782, 'jp_fx_rse': 0.8838, 'kr_fx_rse': 0.6504}
+Target not met yet. kr/jp/us: 0.6504 0.8838 0.4782
+Increasing TARGET_KR_MULT to 3.3138692637598047e+31
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 54560 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.5178 vars: {'us_rse': 0.5906, 'jp_fx_rse': 0.9922, 'kr_fx_rse': 0.7344}
+Target not met yet. kr/jp/us: 0.7344 0.9922 0.5906
+Increasing TARGET_KR_MULT to 4.970803895639707e+31
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 55040 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Full train test rse: 0.4932 vars: {'us_rse': 0.8878, 'jp_fx_rse': 1.0119, 'kr_fx_rse': 1.0523}
+Target not met yet. kr/jp/us: 1.0523 1.0119 0.8878
+Increasing TARGET_KR_MULT to 7.45620584345956e+31
+Best auto-tune so far: kr1.0_jp1.0_us2.0_lr0.0001_b8 test rse= 0.4649
+Launching full train: /Users/samrobert/Documents/GitHub/single/.venv/bin/python single/train_test.py --epochs=300 --lr=0.0001 --batch_size=8 -> /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log
+Launched full train pid 55380 log /Users/samrobert/Documents/GitHub/single/auto_tune_long/full_kr1.0_jp1.0_us2.0_lr0.0001_b8.log

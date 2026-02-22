@@ -286,10 +286,11 @@ def evaluate_sliding_window(data, test_window, model, evaluateL2, evaluateL1, n_
         # ==================================================
 
         # 다음 스텝을 위한 입력 업데이트 (Sliding Window)
+        # 레깅(자기회귀 피드백) 완화를 위해 '예측값' 대신 '실제값(y_true)'을 사용합니다.
         if data.P <= data.out_len:
-            x_input = y_pred[-data.P:].clone()
+            x_input = y_true[-data.P:].clone()
         else:
-            x_input = torch.cat([x_input[-(data.P - data.out_len):, :].clone(), y_pred.clone()], dim=0)
+            x_input = torch.cat([x_input[-(data.P - data.out_len):, :].clone(), y_true.clone()], dim=0)
 
         if predict is None:
             predict = y_pred
@@ -302,14 +303,11 @@ def evaluate_sliding_window(data, test_window, model, evaluateL2, evaluateL1, n_
             variance = torch.cat((variance, var))
             confidence_95 = torch.cat((confidence_95, confidence))
 
-    # 데이터 스케일(DataLoader의 scale/shift) 복원
-    scale = data.scale.expand(test.size(0), data.m)
-    shift = data.shift.expand(test.size(0), data.m)
-    
-    predict = predict * scale + shift
-    test = test * scale + shift
-    variance *= scale
-    confidence_95 *= scale
+    # NOTE: 이전에 per-window 통계(wm, ws)를 사용해 이미 역정규화했으므로
+    # 여기서 global scale/shift를 다시 적용하면 두 번 역정규화되어 값이 크게 왜곡됩니다.
+    # 따라서 global scale/shift 적용을 제거합니다.
+    # (If dat was normalized using global z-score and we had not denormalized per-window,
+    # we would apply data.scale/shift here.)
 
     # --- Metrics 계산 (기존 코드 유지) ---
     sum_squared_diff = torch.sum(torch.pow(test - predict, 2))
